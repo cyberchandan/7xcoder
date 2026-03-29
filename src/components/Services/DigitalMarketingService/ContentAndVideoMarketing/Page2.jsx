@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../../Page2.css";
+import "../../page2.css";
 
 import frame1 from "../../../../assets/ContentAndVideoMarketing/images/Frame 120.png";
 import frame2 from "../../../../assets/ContentAndVideoMarketing/images/Frame 121.png";
