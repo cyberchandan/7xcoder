@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion";
-import "../../Page4.css";
+import "../../page4.css";
 import img1 from "../../../../assets/branding-and-strategy/images/4-1.png";
 import img2 from "../../../../assets/branding-and-strategy/images/4-2.png";
 import img3 from "../../../../assets/branding-and-strategy/images/4-3.png";

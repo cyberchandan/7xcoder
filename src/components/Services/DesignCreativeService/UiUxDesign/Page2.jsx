@@ -4,7 +4,7 @@ import frame5 from '../../../../assets/branding-and-strategy/images/Frame 122.pn
 import frame2 from '../../../../assets/branding-and-strategy/images/Frame 123.png'
 import frame4 from '../../../../assets/branding-and-strategy/images/Frame 124.png'
 import frame6 from '../../../../assets/branding-and-strategy/images/Frame 125.png'
-// import '../../Page2.css'
+import '../../page2.css'
 
 
 const Page2 = () => {

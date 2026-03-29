@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../../Page3.css"
+import "../../page3.css"
 import image3 from "../../../../assets/branding-and-strategy/images/2.png";
 
 const Page3 = () => {

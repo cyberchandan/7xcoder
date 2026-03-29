@@ -1,4 +1,4 @@
-import '../../Page1.css';
+import '../../page1.css';
 import { motion } from "framer-motion";
 import digimart from '../../../../assets/branding-and-strategy/images/1.png';
 

@@ -60,7 +60,7 @@
 
 
 import React from "react";
-import "../../Page5.css";
+import "../../page5.css";
 import { NavLink } from "react-router-dom";
 
 import img1 from "../../../../assets/branding-and-strategy/images/5-1.png";
