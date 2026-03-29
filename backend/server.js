@@ -162,7 +162,7 @@ app.use(express.json());
 
 // ================= TEST ROUTE =================
 app.get("/", (req, res) => {
-  res.send("API RUNNING 🚀");
+  res.send("API RUNNING 🚀 chandan");
 });
 
 // ================= DATABASE (SAFE CONNECT) =================
