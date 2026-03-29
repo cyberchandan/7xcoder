@@ -36,37 +36,37 @@ import AdminDashboard from "./components/Admin/Dashboard";
 
 
 // Service
-import BrandingStrategy from "./components/Services/BrandingStrategy/BrandingStrategy";
-import BusinessSoftwareSolutions from "./components/Services/BusinessSoftwareSolutions/BusinessSoftwareSolutions";
-import DesignCreativeService from "./components/Services/DesignCreativeService/DesignCreativeService";
-import DigitalMarketingService from "./components/Services/DigitalMarketingService/DigitalMarketingService";
-import EcommerceSolutions from "./components/Services/EcommerceSolutions/EcommerceSolutions";
-import WebAndAppDevelopmentServices from "./components/Services/WebAndAppDevelopment/WebAndAppDevelopmentServices";
+// import BrandingStrategy from "./components/Services/BrandingStrategy/BrandingStrategy";
+// import BusinessSoftwareSolutions from "./components/Services/BusinessSoftwareSolutions/BusinessSoftwareSolutions";
+// import DesignCreativeService from "./components/Services/DesignCreativeService/DesignCreativeService";
+// import DigitalMarketingService from "./components/Services/DigitalMarketingService/DigitalMarketingService";
+// import EcommerceSolutions from "./components/Services/EcommerceSolutions/EcommerceSolutions";
+// import WebAndAppDevelopmentServices from "./components/Services/WebAndAppDevelopment/WebAndAppDevelopmentServices";
 
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import CursorGlow from "./components/CursorGlow/CursorGlow";
-import PayPerClick from "./components/Services/DigitalMarketingService/PayPerClick/PayPerClick";
-import WebAndAppDevelopment from "./components/Services/DigitalMarketingService/WebAndAppDevelopment/WebAndAppDevelopment";
-import SEOAndContentWriting from "./components/Services/DigitalMarketingService/SEOAndContentWriting/SEO";
-import EmailAndInfluencerMarketing from "./components/Services/DigitalMarketingService/EmailAndInfluencerMarketing/EmailAndInfluencerMarketing";
-import EcommerceAndMarketing from "./components/Services/DigitalMarketingService/EcommerceAndMarketing/EcommerceAndMarketing";
-import ContentAndVideoMarketing from "./components/Services/DigitalMarketingService/ContentAndVideoMarketing/ContentAndVideoMarketing";
-import AnalyticsROI from "./components/Services/DigitalMarketingService/AnalyticsROI/AnalyticsROI";
-import OnlineReputationManagement from "./components/Services/DigitalMarketingService/OnlineReputationManagement/Online_Reputation_Management";
-import GraphicDesign from "./components/Services/DesignCreativeService/GraphicDesign/GraphicDesign";
-import YoutubeThumbnailVideo from "./components/Services/DesignCreativeService/YoutubeThumbnailVideo/YoutubeThumbnailVideo";
+// import PayPerClick from "./components/Services/DigitalMarketingService/PayPerClick/PayPerClick";
+// import WebAndAppDevelopment from "./components/Services/DigitalMarketingService/WebAndAppDevelopment/WebAndAppDevelopment";
+// import SEOAndContentWriting from "./components/Services/DigitalMarketingService/SEOAndContentWriting/SEO";
+// import EmailAndInfluencerMarketing from "./components/Services/DigitalMarketingService/EmailAndInfluencerMarketing/EmailAndInfluencerMarketing";
+// import EcommerceAndMarketing from "./components/Services/DigitalMarketingService/EcommerceAndMarketing/EcommerceAndMarketing";
+// import ContentAndVideoMarketing from "./components/Services/DigitalMarketingService/ContentAndVideoMarketing/ContentAndVideoMarketing";
+// import AnalyticsROI from "./components/Services/DigitalMarketingService/AnalyticsROI/AnalyticsROI";
+// import OnlineReputationManagement from "./components/Services/DigitalMarketingService/OnlineReputationManagement/Online_Reputation_Management";
+// import GraphicDesign from "./components/Services/DesignCreativeService/GraphicDesign/GraphicDesign";
+// import YoutubeThumbnailVideo from "./components/Services/DesignCreativeService/YoutubeThumbnailVideo/YoutubeThumbnailVideo";
 
-import PerformanceSecurityoptimization from "./components/Services/WebAndAppDevelopment/Performance,Security&Optimization/PerformanceSecurityoptimization.jsx"
-import UiUxDesign from "./components/Services/DesignCreativeService/UiUxDesign/UiUxDesign";
-import PostProduct from "./components/Services/DesignCreativeService/PostProduction/PostProduct";
-import VisualEffects from "./components/Services/DesignCreativeService/VisualEffects(VFX)/VisualEffects";
-import PhotographyAndVideography from "./components/Services/DesignCreativeService/PhotographyAndVideography/PhotographyAndVideography";
-import ProductVisualisation from "./components/Services/DesignCreativeService/3DPV/ProductVisualisation";
-import MotionGraphicsAnimation from "./components/Services/DesignCreativeService/MotionGraphics&Animation/MotionGraphics&Animation";
-import BackendAndAPIDevelopment from "./components/Services/WebAndAppDevelopment/BackendAndAPIDevelopment/BackendAndAPIDevelopment.jsx"
-import MobileAppDevelopment from "./components/Services/WebAndAppDevelopment/MobileAppDevelopment/MobileAppDevelopment.jsx";
-import MaintenanceSupport from "./components/Services/WebAndAppDevelopment/Maintenance&Support/MaintenanceSupport.jsx";
-import UIUXDrivenDevelopment from "./components/Services/WebAndAppDevelopment/UIUXDrivenDevelopment/UIUXDrivenDevelopment.jsx";
+// import PerformanceSecurityoptimization from "./components/Services/WebAndAppDevelopment/Performance,Security&Optimization/PerformanceSecurityoptimization.jsx"
+// import UiUxDesign from "./components/Services/DesignCreativeService/UiUxDesign/UiUxDesign";
+// import PostProduct from "./components/Services/DesignCreativeService/PostProduction/PostProduct";
+// import VisualEffects from "./components/Services/DesignCreativeService/VisualEffects(VFX)/VisualEffects";
+// import PhotographyAndVideography from "./components/Services/DesignCreativeService/PhotographyAndVideography/PhotographyAndVideography";
+// import ProductVisualisation from "./components/Services/DesignCreativeService/3DPV/ProductVisualisation";
+// import MotionGraphicsAnimation from "./components/Services/DesignCreativeService/MotionGraphics&Animation/MotionGraphics&Animation";
+// import BackendAndAPIDevelopment from "./components/Services/WebAndAppDevelopment/BackendAndAPIDevelopment/BackendAndAPIDevelopment.jsx"
+// import MobileAppDevelopment from "./components/Services/WebAndAppDevelopment/MobileAppDevelopment/MobileAppDevelopment.jsx";
+// import MaintenanceSupport from "./components/Services/WebAndAppDevelopment/Maintenance&Support/MaintenanceSupport.jsx";
+// import UIUXDrivenDevelopment from "./components/Services/WebAndAppDevelopment/UIUXDrivenDevelopment/UIUXDrivenDevelopment.jsx";
 
 // Blog
 import Blog from "./components/Blog/Blog";
@@ -75,37 +75,37 @@ import Blog from "./components/Blog/Blog";
 // import PerformanceSecurity from "./components/Services/WebAndAppDevelopment/Performance,Security&Optimization/PerformanceSecurityoptimization.jsx"
 
 // Branding and Strategy
-import BrandStrategyPositioning from "./components/Services/BrandingStrategy/BrandStrategyPositioning/BrandStrategyPositioning.jsx";
-import BrandGuidelinesGovernance from "./components/Services/BrandingStrategy/BrandGuidelinesGovernance/BrandGuidelinesGovernance.jsx";
-import BrandIntegrationImplementation from "./components/Services/BrandingStrategy/BrandIntegrationImplementation/BrandIntegrationImplementation.jsx";
-import BrandSupportOptimization from "./components/Services/BrandingStrategy/BrandSupportOptimization/BrandSupportOptimization.jsx";
-import MarketAndAudienceResearch from "./components/Services/BrandingStrategy/MarketAndAudienceResearch/MarketAndAudienceResearch.jsx";
-import ScalableBrandArchitecture from "./components/Services/BrandingStrategy/ScalableBrandArchitecture/ScalableBrandArchitecture.jsx";
-import StrategicBrandMessaging from "./components/Services/BrandingStrategy/StrategicBrandMessaging/StrategicBrandMessaging.jsx";
-import BrandIdentityDesignSystems from "./components/Services/BrandingStrategy/BrandIdentityDesignSystems/BrandIdentityDesignSystems.jsx";
+// import BrandStrategyPositioning from "./components/Services/BrandingStrategy/BrandStrategyPositioning/BrandStrategyPositioning.jsx";
+// import BrandGuidelinesGovernance from "./components/Services/BrandingStrategy/BrandGuidelinesGovernance/BrandGuidelinesGovernance.jsx";
+// import BrandIntegrationImplementation from "./components/Services/BrandingStrategy/BrandIntegrationImplementation/BrandIntegrationImplementation.jsx";
+// import BrandSupportOptimization from "./components/Services/BrandingStrategy/BrandSupportOptimization/BrandSupportOptimization.jsx";
+// import MarketAndAudienceResearch from "./components/Services/BrandingStrategy/MarketAndAudienceResearch/MarketAndAudienceResearch.jsx";
+// import ScalableBrandArchitecture from "./components/Services/BrandingStrategy/ScalableBrandArchitecture/ScalableBrandArchitecture.jsx";
+// import StrategicBrandMessaging from "./components/Services/BrandingStrategy/StrategicBrandMessaging/StrategicBrandMessaging.jsx";
+// import BrandIdentityDesignSystems from "./components/Services/BrandingStrategy/BrandIdentityDesignSystems/BrandIdentityDesignSystems.jsx";
 
 // Business Software Solutions
-import SecureScalableArchitectureBusiness from "./components/Services/BusinessSoftwareSolutions/SecureScalableArchitecture/SecureScalableArchitecture.jsx";
-import DataAndReportingSystems from "./components/Services/BusinessSoftwareSolutions/DataAndReportingSystems/DataAndReportingSystems.jsx";
-import CloudBasedSoftwareSolutions from "./components/Services/BusinessSoftwareSolutions/CloudBasedSoftwareSolutions/CloudBasedSoftwareSolutions.jsx";
-import EnterpriseInternalSystems from "./components/Services/BusinessSoftwareSolutions/Enterprise&InternalSystems/Enterprise&InternalSystems.jsx";
-import ProcessAutomationSolutions from "./components/Services/BusinessSoftwareSolutions/ProcessAutomationSolutions/ProcessAutomationSolutions.jsx";
-import SystemIntegrationServices from "./components/Services/BusinessSoftwareSolutions/SystemIntegrationServices/SystemIntegrationServices.jsx";
+// import SecureScalableArchitectureBusiness from "./components/Services/BusinessSoftwareSolutions/SecureScalableArchitecture/SecureScalableArchitecture.jsx";
+// import DataAndReportingSystems from "./components/Services/BusinessSoftwareSolutions/DataAndReportingSystems/DataAndReportingSystems.jsx";
+// import CloudBasedSoftwareSolutions from "./components/Services/BusinessSoftwareSolutions/CloudBasedSoftwareSolutions/CloudBasedSoftwareSolutions.jsx";
+// import EnterpriseInternalSystems from "./components/Services/BusinessSoftwareSolutions/Enterprise&InternalSystems/Enterprise&InternalSystems.jsx";
+// import ProcessAutomationSolutions from "./components/Services/BusinessSoftwareSolutions/ProcessAutomationSolutions/ProcessAutomationSolutions.jsx";
+// import SystemIntegrationServices from "./components/Services/BusinessSoftwareSolutions/SystemIntegrationServices/SystemIntegrationServices.jsx";
 
 // Ecommerce Solutions
-import CheckoutConversionOptimization from "./components/Services/EcommerceSolutions/CheckoutConversionOptimization/CheckoutConversionOptimization.jsx";
-import CustomEcommerceDevelopment from "./components/Services/EcommerceSolutions/CustomE-commerceDevelopment/CustomEcommerceDevelopment.jsx";
-import EnterpriseAndMarketplaceSolutions from "./components/Services/EcommerceSolutions/EnterpriseAndMarketplaceSolutions/EnterpriseAndMarketplaceSolutions.jsx";
-import MaintenanceSupportAndOptimization from "./components/Services/EcommerceSolutions/MaintenanceSupportAndOptimization/MaintenanceSupportAndOptimization.jsx";
-import ProductInventoryOrders from "./components/Services/EcommerceSolutions/ProductInventoryOrders/ProductInventoryOrders.jsx";
-import SecureScalableArchitecture from "./components/Services/EcommerceSolutions/SecureScalableArchitecture/SecureScalableArchitecture.jsx";
-import SystemIntegrationServicesEcom from "./components/Services/EcommerceSolutions/SystemIntegrationServicesEcom/SystemIntegrationServicesEcom.jsx";
+// import CheckoutConversionOptimization from "./components/Services/EcommerceSolutions/CheckoutConversionOptimization/CheckoutConversionOptimization.jsx";
+// import CustomEcommerceDevelopment from "./components/Services/EcommerceSolutions/CustomE-commerceDevelopment/CustomEcommerceDevelopment.jsx";
+// import EnterpriseAndMarketplaceSolutions from "./components/Services/EcommerceSolutions/EnterpriseAndMarketplaceSolutions/EnterpriseAndMarketplaceSolutions.jsx";
+// import MaintenanceSupportAndOptimization from "./components/Services/EcommerceSolutions/MaintenanceSupportAndOptimization/MaintenanceSupportAndOptimization.jsx";
+// import ProductInventoryOrders from "./components/Services/EcommerceSolutions/ProductInventoryOrders/ProductInventoryOrders.jsx";
+// import SecureScalableArchitecture from "./components/Services/EcommerceSolutions/SecureScalableArchitecture/SecureScalableArchitecture.jsx";
+// import SystemIntegrationServicesEcom from "./components/Services/EcommerceSolutions/SystemIntegrationServicesEcom/SystemIntegrationServicesEcom.jsx";
 
-import CustomWebsiteDevelopment from "./components/Services/WebAndAppDevelopment/CustomWebsiteDevelopment/CustomWebsiteDevelopment.jsx";
+// import CustomWebsiteDevelopment from "./components/Services/WebAndAppDevelopment/CustomWebsiteDevelopment/CustomWebsiteDevelopment.jsx";
 
 
 // HRMS
-import HRMS from "./components/Services/HRMS/HRMS.jsx"
+// import HRMS from "./components/Services/HRMS/HRMS.jsx"
 
 
 function AppContent() {
