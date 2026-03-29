@@ -141,44 +141,13 @@
 // // ================= VERCEL EXPORT =================
 // export default serverless(app);
 
+
 import express from "express";
-import serverless from "serverless-http";
-import cors from "cors";
-import mongoose from "mongoose";
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
-
-// 🔥 SAFE DB CONNECT (NON-BLOCKING)
-let isConnected = false;
-
-const connectDB = async () => {
-  if (isConnected) return;
-
-  try {
-    const db = await mongoose.connect(process.env.MONGO_URI, {
-      serverSelectionTimeoutMS: 5000 // 🔥 max 5 sec wait
-    });
-
-    isConnected = db.connections[0].readyState;
-    console.log("✅ MongoDB connected");
-
-  } catch (err) {
-    console.error("❌ DB error:", err.message);
-  }
-};
-
-// 🔥 CALL DB ON START (NOT IN ROUTE)
-connectDB();
-
-// TEST ROUTE (NO BLOCK)
 app.get("/", (req, res) => {
-  res.json({
-    success: true,
-    message: "API RUNNING 🚀"
-  });
+  res.send("API RUNNING 🚀");
 });
 
-export default serverless(app);
+export default app;
