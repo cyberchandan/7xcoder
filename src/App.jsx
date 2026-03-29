@@ -201,15 +201,15 @@ function AppContent() {
           }
         />
          {/* SERVICES */}
-         <Route path="/services/branding-strategy" element={<><BrandingStrategy/></>}/>
+         {/* <Route path="/services/branding-strategy" element={<><BrandingStrategy/></>}/>
          <Route path="/services/business-software-solutions" element={<><BusinessSoftwareSolutions/></>}/>
          <Route path="/services/design-Creative-Services" element={<><DesignCreativeService/></>} />
          <Route path="/services/digital-marketing" element={<><DigitalMarketingService/></>}/>
          <Route path="/services/ecommerce-solutions" element={<><EcommerceSolutions/></>}/>
-         <Route path="/services/web-and-app-development-services" element={<><WebAndAppDevelopmentServices/></>}/>
+         <Route path="/services/web-and-app-development-services" element={<><WebAndAppDevelopmentServices/></>}/> */}
 
          {/* Branding and Strategy */}
-          <Route path="/services/brand-strategy-positioning" element={<><BrandStrategyPositioning/><HomePage9/></>}/>
+          {/* <Route path="/services/brand-strategy-positioning" element={<><BrandStrategyPositioning/><HomePage9/></>}/>
           <Route path="/services/brand-identity-design-system" element={<><BrandIdentityDesignSystems/><HomePage9/></>} />
           <Route path="/services/messaging-communication-strategy" element={<><StrategicBrandMessaging/><HomePage9/></>} />
           <Route path="/services/market-audience-research" element={<><MarketAndAudienceResearch/><HomePage9/></>} />
@@ -217,33 +217,33 @@ function AppContent() {
           <Route path="/services/scalable-bradn-architecture" element={<><ScalableBrandArchitecture/><HomePage9/></>} />
           <Route path="/services/brand-guidelines-governance" element={<><BrandGuidelinesGovernance/><HomePage9/></>} />
           <Route path="/services/ongoing-brand-support-optimization" element={<><BrandSupportOptimization/><HomePage9/></>} />
-
+ */}
 
           
           {/* Business Software Solutions */}
-          <Route path="/services/custom-business-software-development" element={<><HomePage9/></>} />
+          {/* <Route path="/services/custom-business-software-development" element={<><HomePage9/></>} />
           <Route path="/services/enterprise-internal-system" element={<><EnterpriseInternalSystems/><HomePage9/></>} />
           <Route path="/services/process-automation-solutions" element={<><ProcessAutomationSolutions/><HomePage9/></>} />
           <Route path="/services/data-management-reporting-system" element={<><DataAndReportingSystems/><HomePage9/></>} />
           <Route path="/services/system-integration-services" element={<><SystemIntegrationServices/><HomePage9/></>} />
           <Route path="/services/secure-scalable-arch" element={<><SecureScalableArchitectureBusiness/><HomePage9/></>} />
           <Route path="/services/cloud-based-soft-sol" element={<><CloudBasedSoftwareSolutions/><HomePage9/></>} />
-          <Route path="/services/maintenance-support-opt" element={<><HomePage9/></>} />
+          <Route path="/services/maintenance-support-opt" element={<><HomePage9/></>} /> */}
 
           {/* Design Creative Service */}
-         <Route path="/services/graphic-design" element={<><GraphicDesign/><HomePage9/></>}/>
+         {/* <Route path="/services/graphic-design" element={<><GraphicDesign/><HomePage9/></>}/>
          <Route path="/services/youtube-thumbnail-video" element={<><YoutubeThumbnailVideo/><HomePage9/></>}/>
          <Route path="/services/ui-ux-design" element={<><UiUxDesign/><HomePage9/></>}/>
          <Route path="/services/post-product" element={<><PostProduct/><HomePage9/></>}/>
          <Route path="/services/product-visualisation" element={<><ProductVisualisation/><HomePage9/></>}/>
          <Route path="/services/motion-graphics" element={<><MotionGraphicsAnimation/><HomePage9/></>}/>
          <Route path="/services/visual-effests" element={<><VisualEffects/><HomePage9/></>}/>
-         <Route path="/services/photography-videography" element={<><PhotographyAndVideography/><HomePage9/></>}/>
+         <Route path="/services/photography-videography" element={<><PhotographyAndVideography/><HomePage9/></>}/> */}
 
 
           {/* Digital Marketing Service */}
 
-         <Route path="/services/pay-per-click" element={<><PayPerClick/><HomePage9/></>}/>
+         {/* <Route path="/services/pay-per-click" element={<><PayPerClick/><HomePage9/></>}/>
          <Route path="/web-and-app-development" element={<><WebAndAppDevelopment/><HomePage9/></>}/>
          <Route path="/services/seo-and-content-writing" element={<><SEOAndContentWriting/><HomePage9/></>}/>
          <Route path="/services/email-and-influencer-marketing" element={<><EmailAndInfluencerMarketing/><HomePage9/></>}/>
@@ -252,21 +252,21 @@ function AppContent() {
          <Route path="/services/analytics-and-roi-tracking" element={<><AnalyticsROI/><HomePage9/></>}/>
          <Route path="/services/online-reputation-management" element={<><OnlineReputationManagement/><HomePage9/></>}/>
 
-         
+          */}
 
 
           {/* Ecommerce Solutions */}
-          <Route path="/services/custom-e-commerce-development" element={<><CustomEcommerceDevelopment/><HomePage9/></>} />
+          {/* <Route path="/services/custom-e-commerce-development" element={<><CustomEcommerceDevelopment/><HomePage9/></>} />
           <Route path="/services/enterprise-marketplace-solutions" element={<><EnterpriseAndMarketplaceSolutions/><HomePage9/></>} />
           <Route path="/services/checkout-conversion-optimization" element={<><CheckoutConversionOptimization/><HomePage9/></>} />
           <Route path="/services/product-inventory-order-management" element={<><ProductInventoryOrders/><HomePage9/></>} />
           <Route path="/services/system-integration-services-ecom" element={<><SystemIntegrationServicesEcom/><HomePage9/></>} />
           <Route path="/services/secure-scalable-architecture" element={<><SecureScalableArchitecture/><HomePage9/></>} />
           <Route path="/services/cloud-based-e-com-solutions" element={<><HomePage9/></>} />
-          <Route path="/services/maintenance-support-optimization" element={<><MaintenanceSupportAndOptimization/><HomePage9/></>} />
+          <Route path="/services/maintenance-support-optimization" element={<><MaintenanceSupportAndOptimization/><HomePage9/></>} /> */}
 
           {/* Web and app development */}
-         <Route path="/services/Mobile-App-Development" element={<><MobileAppDevelopment/><HomePage9/></>}/>
+         {/* <Route path="/services/Mobile-App-Development" element={<><MobileAppDevelopment/><HomePage9/></>}/>
          <Route path="/services/Maintenance-Support" element={<><MaintenanceSupport/><HomePage9/></>}/>
          <Route path="/services/backend-api" element={<><BackendAndAPIDevelopment/><HomePage9/></>}/>
          <Route path="/services/custom-website-development" element={<><CustomWebsiteDevelopment/><HomePage9/></>}/>
@@ -274,9 +274,9 @@ function AppContent() {
          <Route path="/services/ecom-development-solution" element={<><HomePage9/></>}/>
          <Route path="/services/performance-sercurity-optimization" element={<><PerformanceSecurityoptimization/><HomePage9/></>}/>
          <Route path="/services/web-and-app-development-services" element={<><WebAndAppDevelopmentServices/><HomePage9/></>}/>
-        
+         */}
 
-         <Route path="/services/hrms" element={<><HRMS/><HomePage9/></>} />
+         {/* <Route path="/services/hrms" element={<><HRMS/><HomePage9/></>} /> */}
 
       </Routes>
     </>

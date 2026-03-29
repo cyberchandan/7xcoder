@@ -1,6 +1,6 @@
 import React from "react";
 import "../../page3.css";
-import image3 from "../../../../assets/seo/images/2.png";
+import image3 from "../../../../assets/SEO/images/2.png";
 
 const Service6_3 = () => {
   return (
