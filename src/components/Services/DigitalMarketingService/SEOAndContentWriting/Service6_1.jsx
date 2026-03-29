@@ -1,6 +1,7 @@
 import "../../page1.css";
 import { motion } from "framer-motion";
-import digimart from '../../../../assets/seo/images/1.png';
+import digimart from '../../../../assets/SEO/images/1.png';
+// import digimart from "/src/assets/SEO/images/1.png";
 
 const Service6_1 = () => {
     return (
