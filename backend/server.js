@@ -143,11 +143,54 @@
 
 
 import express from "express";
+import cors from "cors";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+// Routes
+import authRoutes from "./routes/authRoutes.js";
+import cmsRoutes from "./routes/cmsRoutes.js";
+import contactRoutes from "./routes/contactRoutes.js";
+
+dotenv.config();
 
 const app = express();
 
+// ================= BASIC =================
+app.use(cors());
+app.use(express.json());
+
+// ================= TEST ROUTE =================
 app.get("/", (req, res) => {
   res.send("API RUNNING 🚀");
 });
 
+// ================= DATABASE (SAFE CONNECT) =================
+let isConnected = false;
+
+const connectDB = async () => {
+  if (isConnected) return;
+
+  try {
+    const db = await mongoose.connect(process.env.MONGO_URI, {
+      serverSelectionTimeoutMS: 5000
+    });
+
+    isConnected = db.connections[0].readyState;
+    console.log("✅ MongoDB connected");
+
+  } catch (err) {
+    console.error("❌ DB error:", err.message);
+  }
+};
+
+// connect once (non-blocking)
+connectDB();
+
+// ================= ROUTES =================
+app.use("/api/contact", contactRoutes);
+app.use("/api/admin", authRoutes);
+app.use("/api", cmsRoutes);
+
+// ================= EXPORT =================
 export default app;
