@@ -3,7 +3,7 @@ import "../../page5.css";
 
 import img1 from "../../../../assets/Post-Production/icon/Pr.png";
 import img2 from "../../../../assets/Post-Production/icon/DaVinci.png";
-// import img3 from "../../../../assets/Post-Production/icon/ae.png";
+import img3 from "../../../../assets/Post-Production/icon/ae.png";
 import img4 from "../../../../assets/Post-Production/icon/FinalCutPro.png";
 import img5 from "../../../../assets/Post-Production/icon/iMovie.png";
 import img6 from "../../../../assets/Post-Production/icon/Au.png";
