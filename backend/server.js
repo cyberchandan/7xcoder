@@ -141,6 +141,55 @@
 // // ================= VERCEL EXPORT =================
 // export default serverless(app);
 
-app.get("/", (req, res) => {
-  res.send("API RUNNING 🚀");
+import express from "express";
+import serverless from "serverless-http";
+import cors from "cors";
+import mongoose from "mongoose";
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// 🔥 SAFE DB CONNECT (important)
+let isConnected = false;
+
+const connectDB = async () => {
+  if (isConnected) return;
+
+  try {
+    const db = await mongoose.connect(process.env.MONGO_URI);
+    isConnected = db.connections[0].readyState;
+    console.log("✅ MongoDB connected");
+  } catch (err) {
+    console.error("❌ DB error:", err);
+  }
+};
+
+// TEST ROUTE
+app.get("/", async (req, res) => {
+  await connectDB();
+
+  res.json({
+    success: true,
+    message: "API RUNNING 🚀"
+  });
 });
+
+// CONTACT API
+app.post("/api/contact", async (req, res) => {
+  await connectDB();
+
+  try {
+    console.log("Data:", req.body);
+
+    return res.json({
+      success: true,
+      message: "Contact working"
+    });
+  } catch (err) {
+    return res.status(500).json({ error: err.message });
+  }
+});
+
+export default serverless(app);
