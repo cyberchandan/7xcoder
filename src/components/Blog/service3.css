@@ -1,0 +1,148 @@
+/* ================= SECTION WRAPPER ================= */
+.business-software-solution3-blog {
+  margin-top: -1px;
+  padding: clamp(20px, 4vw, 40px) 3.5%;
+  /* min-height: 100vh; */
+  box-sizing: border-box;
+  font-family: "Decalotype";
+
+  background-image:
+    url("src/assets/images/Ellipse 5-1.png"), 
+    /* url("src/assets/images/Ellipse 6.png"), */
+    url("src/assets/images/Vector 3.png"),
+    linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+
+  background-repeat: no-repeat;
+
+  background-position:
+    left top,
+    /* right bottom, */
+    right -1px top,
+    center;
+
+  background-size:
+    clamp(300px, 40vw, 600px) auto,
+    /* 300px auto, */
+    clamp(600px, 80vw, 1740px) 600px,
+    cover;
+}
+
+/* ================= GRID CONTAINER ================= */
+.sc3-blog-grid-blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%; 
+}
+
+/* ================= CARD & IMAGE BOX ================= */
+.sc3-card-container-blog {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sc3-image-box-blog {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.sc3-image-box-blog img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  transition: none;
+}
+
+.sc3-image-box-blog:hover img,
+.sc3-card-container-blog:hover .sc3-image-box-blog img {
+  transform: none !important;
+}
+
+.sc3-meta-text-blog {
+  color: #00c8ff;
+  font-size: 20px;
+  font-family: "decalotype-regular";
+  margin: 10px 0 10px 0;
+}
+
+.sc3-description-blog {
+  color: #ffffff;
+  font-size: clamp(16px, 2vw, 16px);
+  font-family: "decalotype-light";
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Pushes action area to the bottom */
+}
+
+/* ================= ACTION AREA ================= */
+.sc3-action-area-blog {
+  margin-top: auto; /* Ensures buttons align even if titles are different lengths */
+}
+
+/* ================= BUTTON STYLING ================= */
+.sc3-read-more-btn-blog {
+  background: #013992;
+  color: #ffffff;
+  border: 1px solid #00c8ff;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: "decalotype-light";
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.sc3-read-more-btn-blog:hover {
+  background: #00c8ff;
+  color: #013992;
+}
+
+.sc3-btn-icon-blog {
+  width: 14px !important;
+  height: 14px !important;
+  transform: rotate(-45deg);
+  filter: drop-shadow(0.3px 0 white) drop-shadow(0.5px 0 0 white)
+    drop-shadow(0 0.5px 0 white) drop-shadow(0 0.5px 0 white);
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+@media (max-width: 992px) {
+  .sc3-blog-grid-blog {
+    gap: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sc3-blog-grid-blog {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .sc3-description-blog {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sc3-read-more-btn-blog {
+    width: 100%;
+    justify-content: center;
+  }
+}

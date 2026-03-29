@@ -1,0 +1,186 @@
+.bss5 {
+  margin-top: -3px;
+  /* padding: 3%; */
+      background-image:
+    url("../../assets/images/Vector 3.png"),
+   radial-gradient(
+    circle at right center,
+    rgba(0, 123, 255, 0.6),
+    rgba(0, 123, 255, 0.3) 15%,
+    transparent 20%
+  );
+    /* linear-gradient(
+    to right,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  ); */
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-position:
+    right 0px top 0px,   
+        
+    center;
+
+  background-size:
+    1285px 800px,
+    cover;
+    width: 100vw;
+}
+
+.blue-title-bss5 {
+  text-align: right;
+  padding: 3%;
+
+  
+}
+
+.blue-title-bss5>h1 {
+  background: linear-gradient(135deg, #00c8ff, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  line-height: 112%;
+  font-family: "commissioner-medium";
+}
+
+.blue-title-bss5>h1>div {
+  font-family: 'commissioner-extralight';
+  font-size: 36px;
+  /* color: #ffffff; */
+  line-height: 112.9%;
+  -webkit-text-fill-color: #ffffff;
+  text-align: right;
+}
+
+.slider-bss5 {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  /* border: 2px solid red; */
+  /* padding: 20px 0px; */
+}
+
+.slider-track-bss5 {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.slider-track-bss5 img {
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-bss5 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-box-bss5 {
+  width: max-content;
+}
+
+
+.para-bss5 {
+  font-family: 'decalotype-light';
+  font-size: 22px;
+  color: #ffffff;
+  width: 95%;
+  padding: 3%;
+
+}
+
+.para-bss5>button {
+  background: linear-gradient(90deg, #00c8ff, #0e5dda);
+  color: #ffffff;
+  max-width: 344px;
+  height: 61px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'commissioner-semibold';
+  margin-top: 40px;
+  padding: 20px 30px;
+}
+.nav-avoid-blue{
+  color:white;
+}
+
+@media (min-width: 1550px) {
+  .bss5 {
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    animation: infinite;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .para-bss5 {
+    max-width: 100vw;
+
+  }
+
+  .slider-box-bss5 {
+    animation: infinite;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width:900px) {
+.bss5{
+  background-image: none;
+  background: linear-gradient( to right,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c);
+}
+}
+
+/* new css to make ainamtion better */
+/* 🔥 Smooth rendering fix */
+.bss5 {
+  overflow: hidden;
+}
+
+/* 🔥 Slider smoother */
+.slider-track-bss5 {
+  will-change: transform;
+}
+
+/* 🔥 Button smooth hover */
+.para-bss5 button {
+  transition: all 0.3s ease;
+}
+
+.para-bss5 button:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 Text readability improve */
+.para-bss5 p {
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+/* 🔥 Center align content slightly (Figma feel) */
+.para-bss5 {
+  margin: auto;
+}

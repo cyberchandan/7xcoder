@@ -1,0 +1,184 @@
+/* ================= MAIN SECTION ================= */
+@font-face {
+  font-family: "decalotype-light";
+  src: url("../assets/font/decalotype.light.ttf");
+}
+
+@font-face {
+  font-family: "decalotype-regular";
+  src: url("../assets/font/decalotype.regular.ttf");
+}
+.service4-container-blog {
+
+  /* margin-top: -3px;
+  padding: 3%; */
+      margin-top: -1px;
+    padding: clamp(20px, 4vw, 40px) 3.5%;
+    padding-bottom: 0px;
+  width: 100%;             /* Change from 95vw to match top container */
+  box-sizing: border-box;  /* Forces padding to sit INSIDE the width */
+  min-height: 100vh;
+
+  background-image:
+    url("../assets/images/Ellipse 6-1.png"),
+    /* linear-gradient(to right,  #000000, #01112c, #002869,#014abc,#004bc0); */
+    linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+
+  background-repeat: no-repeat;
+
+  background-position:
+    right top ; 
+  background-size:
+  
+    clamp(300px, 30vw, 450px) auto,
+    /* cover;  */
+    
+}
+
+.service4-content-wrapper-blog {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.service4-tagline-blog {
+  color: #00c8ff;
+  font-size: 20px;
+  font-family: "decalotype-regular";
+  margin-bottom: 40px;
+}
+
+/* ================= 5-CARD GRID (Using Exact Card Styling) ================= */
+
+.service4-cards-grid-blog {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  width: 100% !important;
+  margin-bottom: 80px;
+}
+
+.service4-philosophy-card-blog {
+  position: relative;
+  padding: 22px 22px; 
+  border-radius: 40px; 
+  max-height: 320px; 
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.service4-philosophy-card-blog::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #4770ef, #0cbafd);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.service4-icon-box-blog {
+  width: 69px; 
+  height: 65px; 
+  margin-bottom: 20px;
+  opacity: 1; 
+}
+
+.service4-icon-box-blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px; 
+}
+
+.service4-philosophy-card-blog h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "decalotype-semibold";
+}
+
+.service4-philosophy-card-blog p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+/* ================= BOTTOM SECTION ================= */
+
+.service4-divider-blog {
+  width: 100%;
+ 
+  color: #00c8ff;
+  border-bottom: 2.5px solid #00a5fa;
+ 
+}
+
+.service4-thought-leadership-blog {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.service4-tl-col-blog h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "decalotype-regular";
+  font-weight: 300; 
+  line-height: 102%;
+  margin-bottom: 24px;
+}
+
+.service4-tl-col-blog p {
+  margin-top: 0;
+  font-family: 'decalotype-light';
+  font-size: 16px;
+  line-height: 130%; 
+  letter-spacing: 0%;
+  color: #ffffff;
+  max-width: 415px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .service4-cards-grid-blog {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .service4-thought-leadership-blog {
+    grid-template-columns: 1fr;
+  }
+  .service4-cards-grid-blog {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .service4-cards-grid-blog {
+    grid-template-columns: 1fr !important;
+  }
+}

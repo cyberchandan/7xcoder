@@ -1,0 +1,432 @@
+/* =========================
+   SECTION WRAPPER
+========================= */
+.about_us_2 {
+  /* border: 2px solid red; */
+  max-width: 100%;
+  padding: clamp(48px, 6vw, 80px) clamp(0px, 6vw, 0px);
+  padding-top: 0px;
+  margin-top: 0px;
+
+  background-image:
+    url("../../../assets/images/Vector 3.png"),
+    url("../../../assets/images/Ellipse 6.png"),
+    linear-gradient(
+      90deg,
+      #000103,
+      #000814,
+      #01112c,
+      #00307c
+    );
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: right 10% top, left 0px top 0px, center;
+  background-size:
+    clamp(900px, 90vw, 1400px) clamp(500px, 60vw, 830px),
+    clamp(260px, 30vw, 300px) 300px,
+    cover;
+
+  overflow: hidden;
+}
+
+
+.about_us {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  text-align: right;
+}
+
+.info {
+  margin-top: 130px;
+  max-width: 415px;
+}
+
+.title_box {
+  max-width: 415px;
+}
+
+.about_us p {
+  font-size: 14px;
+  font-family: "decalotype-light";
+  color: #ffffff;
+}
+
+.read-more-wrapper {
+  margin-top: 35px;
+  margin-left: 285px;
+  max-width: 128px;
+  height: 37px;
+  padding: 1px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #00c8ff, #023a90, #00c3fb);
+}
+
+.read-more-btn {
+  max-width: 100%;
+  height: 100%;
+  background: #013992;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-family: 'decalotype-light';
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.read-more-icon {
+  max-width: 15px;
+  transform: rotate(-45deg);
+  filter:
+    drop-shadow(0.3px  0 white)
+    drop-shadow(0.5px 0 0 white)
+    drop-shadow(0 0.5px 0 white)
+    drop-shadow(0 0.5px 0 white);
+}
+
+#hero_job {
+  font-family: "decalotype-light";
+  font-size: 20px;
+  color: #ffffff;
+  /* margin-top: -10%; */
+}
+
+.first_letter::first-letter {
+  font-size: 20px;
+}
+#hero_title {
+  font-family: "decalotype-medium";
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.hero_img {
+  border: 2px;
+  border-radius: 10%;
+}
+
+.blue {
+  color: #00c8ff;
+  font-family: "decalotype-regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.divider-about3 {
+
+  height: 2px;
+  max-width: 100%;
+  text-align: center;
+  background-color: #00a5fa;
+  
+  margin: 2% 2%;
+
+}
+
+.card_box {
+  display: flex;
+  gap: 2%;
+  margin: 0px 25px;
+}
+.card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 3%;
+  border-right: 2px solid #00a5fa;
+  font-family: "decalotype-light";
+  font-size: 20px;
+  line-height: 136%;
+  color: #ffffff;
+}
+.card img {
+  max-width: 98.47px;
+  height: 93px;
+}
+
+#card4 {
+  border: none;
+}
+
+.digital_mart {
+  max-width: 106%;
+  height: 120px;
+  overflow: hidden;
+  margin-left: -3%;
+  background: none;
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  display: flex;
+  max-width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.track {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+  font-size: 90px;
+  font-family: "Decalotype", sans-serif;
+  color: #ffffff;
+  /* padding-right: 60px; */
+}
+
+.star {
+  color: #ffffff;
+  font-size: 130px;
+
+  height: 100px;
+}
+
+/* KEY: move exactly one track max-width */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.tourney {
+  font-family: "Tourney", sans-serif;
+}
+
+.about_us3_end {
+  display: flex;
+  padding: 20px;
+}
+
+.div-end {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.div-end h1 {
+  background: linear-gradient(135deg, #02c5ff, #4b6def);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "FLAR" 0,
+    "VOLM" 0;
+    font-size: 50px;
+}
+
+.div-end p {
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "FLAR" 0,
+    "VOLM" 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+@media (max-width: 1200px) {
+  .about_us {
+    gap: 3%;
+  }
+
+  .read-more-wrapper{
+    width: 100px;
+    position: relative;
+    left: -30px;
+  }
+
+  .read-more-btn{
+    /* border: 2px solid red; */
+    /* width: 100px; */
+  }
+  .info,
+  .title_box {
+    width: 360px;
+  }
+
+  .track {
+    font-size: 70px;
+  }
+
+  .star {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about_us_2{
+    /* background-image: none; */
+  }
+  .about_us {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .info {
+    
+    margin-top: 60px;
+
+  }
+  .info,
+  .title_box {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .title_box {
+    /* border: 2px solid red; */
+    margin-top: 30px;
+  }
+
+  .hero_box {
+    margin-top: 40px;
+  }
+
+  .hero_img {
+    width: 280px;
+    height: auto;
+  }
+
+  .read-more-wrapper {
+    margin-left: 0;
+    left: 0px;
+  }
+
+  .card_box {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card,#card4 {
+    width: 45%;
+    border-right: none;
+    border-bottom: 2px solid #00a5fa;
+    padding-bottom: 15px;
+  }
+
+ 
+
+  .track {
+    font-size: 60px;
+  }
+
+  .star {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_us_2 {
+    width: 100vw;
+    padding: 5% 5%;
+  }
+
+  .ellipse,
+  .vector {
+    display: none;
+  }
+
+  #hero_title {
+    font-size: 28px;
+  }
+
+  #hero_job {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .about_us p {
+    font-size: 13px;
+  }
+
+  .track {
+    font-size: 45px;
+  }
+
+  .star {
+    font-size: 70px;
+  }
+
+  .digital_mart {
+    height: 90px;
+  }
+
+  .about_us3_end {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .div-end {
+    width: 45%;
+    justify-content: flex-start;
+  }
+
+  .div-end h1 {
+    font-size: 28px;
+  }
+
+  .div-end p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info,
+  .title_box {
+    width: 100%;
+  }
+
+  .hero_img {
+    width: 220px;
+  }
+
+  .track {
+    font-size: 34px;
+    gap: 20px;
+  }
+
+  .star {
+    font-size: 55px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .div-end {
+    width: 100%;
+  }
+
+  .div-end h1 {
+    font-size: 26px;
+  }
+}

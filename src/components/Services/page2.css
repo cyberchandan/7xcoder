@@ -1,0 +1,152 @@
+/* ================= MAIN SECTION ================= */
+
+.digital-marketing-services-2-2 {
+  font-family: "Decalotype";
+  /* padding: clamp(40px, 6vw, 100px) 0; */
+
+  background-image:
+    url("../../assets/images/Ellipse 81.png"),
+    url("../../assets/images/Ellipse 6-2.png"),
+    url("../../assets/images/Vector 3-1.png"),
+    linear-gradient(to right, #000103, #000814, #01112C, #00307C);
+
+  background-position:
+    left top,
+    right 0% bottom 0%,
+    right 0px top 100%,
+    center;
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+  background-size:
+    clamp(150px, 25vw, 300px) clamp(150px, 25vw, 500px),
+    clamp(150px, 25vw, 300px) auto,
+    clamp(600px, 80vw, 1740px) 600px,
+    cover;
+    padding-left: 50px;
+
+}
+
+/* ================= COMMON CONTAINER ================= */
+
+.benefites-2,
+.sub-title-2,
+.benefites-containr-2,
+.second-container-2 {
+  width: 90%;
+  max-width: 1200px;
+  /* margin:  auto; */
+}
+
+/* ================= HEADER LINE ================= */
+
+.benefites-2 {
+  color: #00C8FF;
+  border-bottom: 2px solid #00A5FA;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: clamp(16px, 2vw, 20px);
+  font-family: "decalotype-regular";
+}
+
+/* ================= SUB TITLE ================= */
+
+.sub-title-2 {
+  color: #ffffff;
+  font-size: clamp(22px, 3vw, 36px);
+  margin-bottom: 50px;
+  font-family: "decalotype-regular";
+}
+
+/* ================= BENEFITS GRID ================= */
+
+.benefites-containr-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ================= COLUMNS ================= */
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.custom-border-2 {
+  border-right: 2px solid #00A5FA;
+  padding-right: 30px;
+}
+
+/* ================= TEXT ================= */
+
+.benefit-title {
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-family: "decalotype-semibold";
+  color: #ffffff;
+  line-height: 1.2;
+  max-width: 200px;
+  padding: 8px 0px;
+}
+
+.benefit-text {
+  font-size: clamp(14px, 1.8vw, 15px);
+  font-family: "decalotype-light";
+  line-height: 140%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* ================= SECOND SECTION ================= */
+
+.second-container-2 {
+  margin-top: 70px;
+}
+
+.second-text {
+  font-family: "decalotype-light";
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 150%;
+  color: #ffff;
+  ;
+}
+
+/* Ensure list markers and text are consistently indented */
+.second-container-2 ul {
+  padding-left: 30px;
+  margin-left: 0;
+}
+
+.second-container-2 li {
+  margin: 8px 0;
+  list-style-position: outside;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .benefites-containr-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custom-border-2 {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .benefites-containr-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-border-2>.e-commerce-services-benefits-div,
+  .e-commerce-services-benefits-div {
+    border-bottom: 2px solid #00A5FA;
+    padding-right: 30px;
+    margin-top: 10px;
+  }
+}

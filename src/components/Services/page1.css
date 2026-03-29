@@ -1,0 +1,403 @@
+/* @font-face {
+  font-family: 'decalotype-light';
+  src: url('../../../assets/font/decalotype.light.ttf');
+}
+
+@font-face {
+  font-family: 'decalotype-regular';
+  src: url('../../../assets/font/decalotype.regular.ttf');
+}
+
+@font-face {
+  font-family: 'decalotype-semibold';
+  src: url('../../../assets/font/decalotype.semibold.ttf');
+} */
+
+
+
+.hero-box-service1 {
+
+  padding: 3%;
+  padding-top: 80px;
+background-image:
+    url("../../assets/images/Ellipse 7.png"),
+    linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  background-position:
+    left 0px bottom -1px,
+           
+    center;
+  background-size:
+    clamp(150px, 25vw, 300px) clamp(150px, 25vw, 500px),
+    /* 300px auto, */
+    cover;
+}
+
+.title-box-service1 {
+  padding: 20px;
+}
+
+.title2-service1 {
+  font-family: 'decalotype-semibold';
+  font-size: 80px;
+  font-family: 800;
+  height: auto;
+  line-height: 1.2;
+  text-align: center;
+  
+  background: linear-gradient(135deg, #00c8ff, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 1250px;
+}
+
+.sub-title-service1 {
+
+  font-family: 'decalotype-regular';
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0px;
+  max-width: 1250px;
+margin-bottom:20px;
+}
+
+.service-para1-service1 {
+  font-family: 'decalotype-light';
+  font-size: 20px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 1250px;
+
+}
+
+.logo-box2-service1 {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  margin-left: 20px;
+}
+
+.social-media-service1 {
+  margin-top: 0px;
+  max-width: 800px;
+}
+
+.social-media-service1>p {
+  font-size: 16px;
+  font-family: 'decalotype-regular';
+  color: #00c3fb;
+  line-height: 160%;
+}
+
+.social-media-service1>p>span {
+  font-size: 32px;
+  font-family: 'decalotype-regular';
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.content-box-service1 {
+  max-width: 800px;
+  margin: 0px;
+  margin-left: 70px;
+}
+
+.content-service1 span,
+.content-service1 h2,
+.content-service1 p {
+  font-family: 'decalotype-regular';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #00c7ff;
+}
+
+.content-service1 h2 {
+  font-size: 32px;
+  margin: 0px;
+
+}
+
+.content-service1 p {
+  color: #ffffff;
+  font-family: 'decalotype-light';
+  font-size: 19.5px;
+  margin: 3px;
+  line-height: 120%;
+}
+
+.content-box-service1+p {
+  letter-spacing: 0.3px;
+  font-size: 18px;
+  margin-top: 5%;
+  color: #ffffff;
+  max-width: 900px;
+  font-family: 'decalotype-light';
+}
+
+.logo-box2-service1>img {
+  width: 348px;
+  height: 447px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1501px) {
+
+  .title-box-service1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .logo-box2-service1 {
+    /* margin-left: -180px; */
+    justify-content: center;
+  }
+
+  .title2-service1 {
+    padding-top: 50px;
+    font-size: 60px;
+    height: auto;
+    text-align: left;
+  }
+
+  .sub-title-service1 {
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .service-para1-service1 {
+    font-size: 18px;
+    /* width: 80%; */
+  }
+
+  .content-box-service1 {
+    margin-left: 10px;
+  }
+
+  .logo-box2-service1>div {
+    max-width: 500px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+
+
+  .hero-box-service1 {
+    padding: 40px 30px;
+    background-position:
+      left 0px top 100%,
+      center;
+    background-size:
+      220px auto,
+      cover;
+  }
+
+  .title2-service1 {
+    font-size: 40px;
+    height: auto;
+  }
+
+  .sub-title-service1 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  .service-para1-service1 {
+    font-size: 15px;
+    /* width: 60%; */
+    text-align: left;
+  }
+
+  .logo-box2-service1 {
+    justify-content: left;
+  }
+
+  .content-box-service1 {
+    margin-left: 20px;
+  }
+
+  .content-service1 span,
+  .content-service1 h2,
+  .content-service1 p {
+    font-size: 18px;
+    /* width: 80%; */
+  }
+
+  .logo-box2-service1 {
+    margin-left: 0px;
+  }
+
+  .content-box-service1+p {
+    /* margin-left: -350px; */
+    /* width: 150%; */
+  }
+
+}
+
+@media (max-width: 769px) {
+
+
+  .hero-box-service1 {
+    /* padding: 30px 20px; */
+
+    background-position:
+      left 0px top 100%,
+      center;
+
+    background-size:
+      160px auto,
+      cover;
+  }
+
+  .title-box-service1 {
+    /* padding: 10px; */
+  }
+
+  .title2-service1 {
+    font-size: 30px;
+    height: auto;
+    line-height: 120%;
+    /* padding-top: 0; */
+    text-align: left;
+  }
+
+  .sub-title-service1 {
+    font-size: 20px;
+    margin-top: auto;
+    text-align: left;
+  }
+
+  .service-para1-service1 {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .logo-box2-service1 {
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+  }
+
+  .social-media-service1 {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .content-box-service1 {
+    margin-top: 30px;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .content-service1 span,
+  .content-service1 h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .content-service1 p {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .content-box-service1+p {
+    font-size: 16px;
+    text-align: left;
+    /* max-width: 120%; */
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .title2-service1 {
+    font-size: 28px;
+    text-align: left;
+    padding-top: 50px;
+  }
+
+  .sub-title-service1 {
+    font-size: 18px;
+    text-align: left;
+    /* width: 30%; */
+
+  }
+
+  .service-para1-service1 {
+    font-size: 15px;
+    text-align: left;
+    /* width: 30%; */
+
+
+  }
+
+  .content-service1 span,
+  .content-service1 h2 {
+    font-size: 20px;
+    text-align: left;
+    /* width: 80%; */
+
+
+  }
+
+  .content-service1 p {
+    font-size: 15px;
+    text-align: left;
+    /* width: 80%; */
+
+
+  }
+
+  .social-media-service1>p {
+    font-size: 14px;
+    text-align: left;
+    /* width: 80%; */
+
+
+  }
+
+  .social-media-service1>p>span {
+    font-size: 24px;
+    text-align: left;
+
+  }
+
+  .logo-box2-service1 img {
+    height: 200px;
+    width: 150px;
+    margin-right: 100px;
+  }
+
+  .content-box-service1+p {
+    /* width: 80%; */
+    text-align: left;
+
+  }
+}
+
+@media (max-width:420) {
+    .service-para1-service1 {
+    font-size: 15px;
+    text-align: left;
+    width: 150%;
+    border: 2px solid red;
+  }
+}

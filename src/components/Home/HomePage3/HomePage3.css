@@ -1,0 +1,295 @@
+/* ======================================================
+   WHY SECTION – HOMEPAGE 3 (SIDE-BY-SIDE PILL FIX)
+====================================================== */
+
+.why-section-home3 {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Decolotype", sans-serif;
+  overflow-x: hidden;
+  padding: 0 clamp(24px, 6vw, 100px) clamp(60px, 8vw, 80px);
+  background-image:
+  url('../../../assets/images/Ellipse\ 6.png'),
+   radial-gradient(
+    circle at right center,
+    rgba(0, 123, 255, 0.6),
+    rgba(0, 123, 255, 0.3) 20%,
+    transparent 40%
+  ),
+
+  linear-gradient(90deg,#000103,#000814,#01112c,#00307c);
+  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+  background-size: 
+  250px auto,
+  /* 250px auto, */
+  650px auto,
+  cover
+  ;
+  background-position: 
+  left 0px top 0px,
+ 
+  right 0px top 0%,
+  center
+  ;
+}
+
+/* CONTENT WIDTH */
+.why-section-home3 > * {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ======================================================
+   TOP GRID
+====================================================== */
+
+.why-text-main-top-container-home3 {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* ======================================================
+   LEFT CONTENT
+====================================================== */
+
+.top-badge-home3 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.years-home3 {
+  font-family: "Tourney", sans-serif;
+  font-size: 96px;
+  line-height: 1;
+}
+
+.top-badge-home3 p {
+  font-family: "Commissioner", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.top-badge-home3 a {
+  color: #4fd1ff;
+  text-decoration: underline;
+}
+
+.experience-text-home3 {
+  font-size: 18px;
+}
+
+.why-content-home3 h1 {
+  font-size: 48px;
+  margin: 18px 0 14px;
+  background: linear-gradient(90deg, #02c6ff, #4b6def);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-content-home3 p {
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 620px;
+}
+
+.why-choose-big-text-home3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* ======================================================
+   IMAGE + PILL (TRUE SIDE-BY-SIDE)
+====================================================== */
+
+.why-image-home3 {
+  display: grid;
+  grid-template-columns: auto 56px; /* image | pill */
+  align-items: center;
+  gap: 16px;
+}
+
+/* IMAGE */
+.why-image-home3 img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 22px;
+}
+
+/* PILL COLUMN */
+.pill-column-home3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PILL */
+.contact-pill-home3 {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  text-decoration: none;
+
+  height: 36px;
+  padding: 0 28px;
+padding-top:8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+
+  white-space: nowrap;
+}
+
+/* ======================================================
+   STATS
+====================================================== */
+
+.stats-wrapper-home3 {
+  margin-top: 48px;
+}
+
+.stats-row-home3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+
+.stats-text-container-home3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-box-home3 h1 {
+  font-size: 38px;
+  background: linear-gradient(90deg, #02c6ff, #4b6def);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-box-home3 span {
+  font-size: 18px;
+  color: rgba(225, 222, 222, 0.75);
+}
+
+/* ======================================================
+   DIVIDER
+====================================================== */
+
+.divider-home3 {
+  height: 1.5px;
+  background: #31ccff;
+  margin: 22px 0 26px;
+}
+
+/* ======================================================
+   TRUSTED + BRANDS
+====================================================== */
+
+.trusted-text-home3 {
+  text-decoration: underline;
+  margin-bottom: 28px;
+}
+
+.brands-wrapper-home3 {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.brands-marquee-home3 {
+  display: flex;
+  width: max-content;
+  animation: marquee 50s linear infinite;
+}
+
+.brand-card-home3 {
+  padding: 0 30px;
+}
+
+.brand-card-home3 img {
+  max-width: 200px;
+}
+
+/* ======================================================
+   SERVICES
+====================================================== */
+
+.services-section-home3 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.integrated-digital-title-home3 {
+  font-size: 40px;
+  background: linear-gradient(90deg, #0bbbfd, #4771f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.integrated-digital-desc-home3 {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Commissioner", sans-serif;
+  text-align: right;
+}
+
+/* ======================================================
+   ANIMATION
+====================================================== */
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 900px) {
+  .why-text-main-top-container-home3 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .why-image-home3 {
+    grid-template-columns: 1fr;
+  }
+
+  .pill-column-home3 {
+    display: none;
+  }
+
+  .stats-row-home3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-row-home3 {
+    grid-template-columns: 1fr;
+  }
+
+  .why-image-home3 img {
+    max-width: 320px;
+  }
+}
+
+@media (max-width:480px) {
+  .why-section-home3{
+    background-image: none;
+  }
+}

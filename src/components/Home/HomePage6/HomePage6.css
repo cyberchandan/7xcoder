@@ -1,0 +1,249 @@
+
+/* ===============================
+   PARTNERS SECTION BASE
+================================ */
+.partners-home6 {
+  padding: clamp(0px, 6vw, 0px)
+           clamp(20px, 6vw, 30px)
+           clamp(60px, 8vw, 95px);
+  color: #ffffff;
+  position: relative;
+  font-family: "Commissioner", sans-serif;
+
+  /* 🔒 zoom safety */
+  max-width: 100%;
+  overflow-x: hidden;
+    background-image:
+  url('../../../assets/images/Ellipse\ 5.png'),
+  /* url('../../../assets/images/Ellipse\ 6-2.png'), */
+  /* url('../../../assets/images/Ellipse\ 6-1.png'), */
+
+  linear-gradient(90deg,#000103,#000814,#01112c,#00307c);
+  background-repeat: no-repeat,no-repeat;
+  background-size: clamp(200px, 30vw, 400px),
+  /* 250px auto, */
+  /* 250px auto, */
+  cover;
+  background-position: 
+  left 0px bottom -1px,
+  /* right 0px top 54.4%, */
+  /* right 0px top 100%, */
+  center ;
+}
+
+/* ===============================
+   TOP LINE
+================================ */
+.top-line-home6 {
+  height: 1.7px;
+  width: 100%;
+  background-color: #31ccff;
+  margin-bottom: 26px;
+  margin-top: 0px;
+}
+
+/* ===============================
+   HEADING
+================================ */
+.heading-home6 {
+  text-align: right;
+  margin-bottom: clamp(28px, 5vw, 46px);
+}
+
+.heading-home6 h1 {
+  font-weight: 500;
+  font-size: clamp(26px, 4vw, 39px);
+  line-height: 1.15; /* 🔒 fixed for zoom */
+  background: linear-gradient(90deg, #67bdff 50%, #557aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+.heading-home6 p {
+  font-weight: 100;
+  font-size: clamp(18px, 3vw, 29px);
+  color: rgb(227, 227, 227);
+  line-height: 1.25; /* 🔒 fixed */
+}
+
+/* ===============================
+   LOGO SLIDER (ZOOM-PROOF)
+================================ */
+.logo-slider-home6 {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: clamp(50px, 8vw, 92px);
+
+  /* 🔒 prevents zoom jump */
+  contain: layout paint;
+}
+
+.logo-track-home6 {
+  display: flex;
+  gap: clamp(16px, 3vw, 26px);
+  width: max-content;
+  animation: scroll-logos 28s linear infinite;
+
+  /* 🔒 GPU stability */
+  will-change: transform;
+}
+
+.logo-slider-home6:hover .logo-track-home6 {
+  animation-play-state: paused;
+}
+
+.logo-pill-home6 {
+  background: #ffffff;
+  width: clamp(140px, 18vw, 180px);
+  height: clamp(50px, 7vw, 60px);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-pill-home6 img {
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: contain;
+}
+
+@keyframes scroll-logos {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+/* ===============================
+   CARDS WRAPPER
+================================ */
+.cards-wrapper-home6 {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  /* 🔒 zoom containment */
+  max-width: 100%;
+}
+
+/* ===============================
+   ARROW BG
+================================ */
+.arrow-bg-home6 {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: min(95%, 1400px); /* 🔒 clamps zoom overflow */
+}
+
+/* ===============================
+   CARDS ROW (ZOOM-SAFE CORE)
+================================ */
+.cards-row-home6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(20px, 4vw, 36px);
+  position: relative;
+  z-index: 2;
+
+  /* 🔒 prevents reflow chaos on zoom */
+  align-items: stretch;
+}
+
+/* ===============================
+   CARD ITEM
+================================ */
+.card-item-home6 {
+  position: relative;
+  isolation: isolate;
+  min-width: 0; /* 🔒 text overflow fix */
+}
+
+/* ===============================
+   DOT
+================================ */
+.card-dot-home6 {
+  width: 46px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* ===============================
+   INFO CARD
+================================ */
+.info-card-home6 {
+  border-radius: 23px;
+  padding: clamp(20px, 3vw, 26px)
+           clamp(18px, 3vw, 24px);
+  display: flex;
+  flex-direction: column;
+
+  /* 🔒 zoom stability */
+  height: 100%;
+}
+
+.info-card-home6 h3 {
+  font-size: clamp(17px, 2vw, 20px);
+  font-weight: 500;
+  margin: 0 0 12px;
+  line-height: 1.35;
+  color: #ffffff;
+}
+
+.info-card-home6 p {
+  font-weight: 200;
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.55;
+  color: #e9e9e9;
+  margin: 0;
+}
+
+/* ===============================
+   FOOTER TEXT
+================================ */
+.footer-text-home6 {
+  font-size: clamp(15px, 2vw, 18px);
+  color: #cbd5e1;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+/* ===============================
+   SMALL DEVICES
+================================ */
+@media (max-width: 900px) {
+  .arrow-bg-home6 {
+    display: none;
+  }
+
+  .partners-home6{
+    background-image: none;
+  }
+
+  .heading-home6 {
+    text-align: center;
+  }
+}
+
+@media (min-width:1501px){
+  .partners-home6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards-row-home6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .card-item-home6{
+    width: 500px;
+  }
+  .footer-text-home6{
+    width: 1000px;
+  }
+}

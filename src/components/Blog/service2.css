@@ -1,0 +1,269 @@
+/* ================= MAIN SECTION ================= */
+@font-face {
+  font-family: "decalotype-light";
+  src: url("../assets/font/decalotype.light.ttf");
+}
+
+@font-face {
+  font-family: "decalotype-regular";
+  src: url("../assets/font/decalotype.regular.ttf");
+}
+
+@font-face {
+  font-family: "decalotype-semibold";
+  src: url("../assets/font/decalotype.semibold.ttf");
+}
+.digital-marketing-services-2-2-blog {
+  font-family: "Decalotype";
+  /* Reduced vertical padding */
+  padding: clamp(0px, 4vw, 0px) 0;
+
+  background-image:
+    url("../../assets/images/Ellipse 5 copy.png"),
+    /* url("../../assets/images/Ellipse 6-1.png"), */
+    url("../../assets/images/Vector 3-1.png"),
+    linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+
+  background-position:
+    left bottom,
+    /* right top,  */
+    right 0px top 100%,
+    center;
+
+  background-repeat: no-repeat;
+
+  background-size:
+    clamp(300px, 40vw, 600px) auto,
+    /* clamp(300px, 40vw, 600px) auto,  */
+    clamp(600px, 80vw, 1740px) 600px,
+    cover;
+}
+
+.sc2-image-box-blog {
+  width: 100%; /* Ensure the container takes full width of the card */
+  overflow: hidden;
+  border-radius: 20px;
+}
+.sc2-image-box-blog img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  /* object-fit: cover; */
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  display: block;
+  transition: transform 0.3s ease;
+}
+/* ================= COMMON CONTAINER ================= */
+
+/* .service2-divider-blog {
+  max-width: 1250px;
+  margin: 0 auto 20px auto;
+  color: #00c8ff;
+  border-bottom: 2px solid #00a5fa;
+  padding-bottom: 10px;
+} */
+.service2-divider-blog {
+  width: 100%;
+  height: 2px; /* or your required height */
+  color: #00c8ff;
+  border-bottom: 2.5px solid #00a5fa;
+  margin-bottom: 40px;
+}
+
+/* ================= BLOG FEATURES LAYOUT ================= */
+
+.blog-features-blog {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: stretch; /* Allows left side and right side to match height */
+  padding: 10px 3.5%;
+  width: 100% !important;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.top-row-wrapper-blog {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* --- Left Text Section --- */
+.left-text-wrapper-blog {
+  flex: 0 1 350px; /* Allows it to shrink if needed but basis is 350px */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blog-tag-blog {
+  color: #00c8ff;
+  font-size: 18px;
+  font-family: "decalotype-regular";
+  margin-bottom: 10px;
+}
+
+.blog-heading-blog {
+  /* Font Family & Weight */
+  font-family: "decalotype-semibold";
+  font-weight: 500; /* Maps to "Medium" */
+  font-style: normal; /* "Medium" is a weight, not a style like Italic */
+
+  /* Sizing & Spacing */
+  font-size: 32px;
+  line-height: 1.15; /* Converted from 114.99% (115 / 100) */
+  letter-spacing: 0;
+
+  /* Text Rendering */
+  color: #ffffff;
+  text-transform: none;
+  /* leading-trim is a newer spec; standard CSS uses normal box sizing */
+  vertical-align: baseline;
+}
+
+.blog-heading-blog span {
+  display: block;
+  font-family: "decalotype-semibold";
+  font-weight: 400; /* Keeping it slightly bolder for emphasis */
+}
+
+.lets-connect-wrapper-blog {
+  margin-top: auto; /* Pushes button to bottom of the flex container */
+  padding-top: 30px;
+}
+
+.lets-connect-btn-blog {
+  background: #013992;
+  color: #ffffff;
+  border: 1px solid #00c8ff;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.lets-connect-btn-blog:hover {
+  background: #00c8ff;
+  color: #013992;
+}
+
+.connect-icon-blog {
+  width: 14px;
+  transform: rotate(-45deg);
+  filter: drop-shadow(0.3px 0 white) drop-shadow(0.5px 0 0 white)
+    drop-shadow(0 0.5px 0 white) drop-shadow(0 0.5px 0 white);
+}
+
+/* --- Right Cards Section --- */
+.card-wrapper-blog {
+  flex: 1;
+  display: block !important;
+  width: 100%;
+}
+
+.cards-bss4-blog {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* ================= INDIVIDUAL CARD STYLING ================= */
+
+.blog-feature-card-blog {
+  position: relative;
+  padding: 22px 22px;
+  border-radius: 40px;
+  max-height: 320px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.blog-feature-card-blog::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #4770ef, #0cbafd);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.blog-icon-box-blog {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.blog-icon-box-blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.blog-feature-card-blog h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "decalotype-semibold";
+}
+
+.blog-feature-card-blog p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+/* ================= RESPONSIVE FIXES ================= */
+
+@media (max-width: 1100px) {
+  .top-row-wrapper-blog {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .card-wrapper-blog {
+    width: 100%;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-bss4-blog {
+    grid-template-columns: 1fr !important; /* Stack cards on mobile */
+    max-width: 400px;
+    margin: 0 auto !important;
+  }
+
+  .blog-features-blog {
+    padding: 40px 5%;
+  }
+}

@@ -1,0 +1,193 @@
+import "../page4.css";
+import { useNavigate } from "react-router-dom";
+
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+
+import cloud from "../../../assets/Web-and-app-development-services/image9.png";
+import custom from "../../../assets/Web-and-app-development-services/image3.png";
+import data from "../../../assets/Web-and-app-development-services/image6.png";
+import enterprise from "../../../assets/Web-and-app-development-services/image4.png";
+import maintenance from "../../../assets/Web-and-app-development-services/image10.png";
+import process from "../../../assets/Web-and-app-development-services/image5.png";
+import secure from "../../../assets/Web-and-app-development-services/image8.png";
+import system from "../../../assets/Web-and-app-development-services/image7.png";
+import arrow from "../../../assets/business-software-solutions/icon/arrow1.png";
+
+const expertiseList = [
+  {
+    title: "Custom Website Development",
+    description:
+      "We build fast, responsive, and scalable websites tailored to your business goals, ensuring strong performance, usability, and long term reliability.",
+    img: custom,
+  },
+  {
+    title: "Mobile App Development (iOS & Android)",
+    description:
+      "Secure, high performance mobile applications designed for seamless user experience, scalability, and cross platform compatibility.",
+    img: enterprise,
+  },
+  {
+    title: "Web Application Development",
+    description:
+      "Feature rich web applications developed with clean architecture and modern technologies to support business operations and future growth.",
+    img: process,
+  },
+  {
+    title: "UI/UX–Driven Development",
+    description:
+      "Development powered by user centric UI/UX principles to improve engagement, navigation, and conversion rates across digital platforms.",
+    img: data,
+  },
+  {
+    title: "Backend & API Development",
+    description:
+      "Robust, scalable backend systems with secure APIs and third party integrations to ensure smooth data flow and system efficiency.",
+    img: system,
+  },
+  {
+    title: "E-Commerce Development Solutions",
+    description:
+      "Conversion focused e-commerce platforms with secure payment gateways, inventory management, and performance optimization.",
+    img: secure,
+  },
+  {
+    title: "Performance, Security & Optimization",
+    description:
+      "Speed optimization, security enhancements, and stability improvements to deliver reliable, high performing digital products.",
+    img: cloud,
+  },
+  {
+    title: "Maintenance & Support",
+    description:
+      "Ongoing technical support, updates, monitoring, and enhancements to keep your web and app platforms stable and future ready.",
+    img: maintenance,
+  },
+];
+
+const Service6_4 = () => {
+  const navigate = useNavigate();
+
+  const handleMobileAppDevelopment = () => {
+    navigate("/services/Mobile-App-Development");
+  };
+
+  const handleMaintenanceSupport = () => {
+    navigate("/services/Maintenance-Support");
+  };
+
+  const handleBackEndAPI = () => {
+    navigate("/services/backend-api");
+  };
+
+  const handleCustomWebsiteDevelopment = () => {
+    navigate("/services/custom-website-development");
+  };
+
+  const handleUiUxDrivenDevelopment = () => {
+    navigate("/services/uiux-driven-development");
+  };
+
+  const handleEcommerceDevelopmentSolution = () => {
+    navigate("/services/ecom-development-solution");
+  };
+
+  const handlePerformanceSecurityOptimization = () => {
+    navigate("/services/performance-sercurity-optimization");
+  };
+
+  const handleWebApplicationDevelopment = () => {
+    navigate("/services/web-and-app-development-services");
+  };
+
+  return (
+    <section className="business-software-solution4">
+
+      <motion.p
+        className="blue-bss4"
+        initial={{ opacity: 0, y: -60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        OUR SPECIALIZATION
+      </motion.p>
+
+      <motion.div
+        className="divider-bss4"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.3 }}
+      ></motion.div>
+
+      <motion.h2
+        className="h2-bss4"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        What We Have <span>to Offer</span>
+      </motion.h2>
+
+      <div className="cards-bss4">
+        {expertiseList.map((item, index) => (
+          <motion.div
+            className="feature-card-bss4"
+            key={index}
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.15 }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
+
+            <motion.div
+              className="icon-box-bss4"
+              initial={{ opacity: 0, scale: 0.6 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <img src={item.img} alt={item.title} />
+            </motion.div>
+
+            <h4>{item.title}</h4>
+            <p>{item.description}</p>
+
+            <div className="read-more-wrapper-bss4">
+              <button
+                className="read-more-btn-bss4"
+                onClick={
+                  item.title === "Custom Website Development"
+                    ? handleCustomWebsiteDevelopment
+                    : item.title === "Mobile App Development (iOS & Android)"
+                    ? handleMobileAppDevelopment
+                    : item.title === "Web Application Development"
+                    ? handleWebApplicationDevelopment
+                    : item.title === "UI/UX–Driven Development"
+                    ? handleUiUxDrivenDevelopment
+                    : item.title === "Backend & API Development"
+                    ? handleBackEndAPI
+                    : item.title === "E-Commerce Development Solutions"
+                    ? handleEcommerceDevelopmentSolution
+                    : item.title === "Performance, Security & Optimization"
+                    ? handlePerformanceSecurityOptimization
+                    : item.title === "Maintenance & Support"
+                    ? handleMaintenanceSupport
+                    : undefined
+                }
+              >
+                Read More
+                <img src={arrow} alt="arrow" className="read-more-icon-bss4" />
+              </button>
+            </div>
+
+          </motion.div>
+        ))}
+      </div>
+
+    </section>
+  );
+};
+
+export default Service6_4;
