@@ -492,6 +492,9 @@ const Dashboard = () => {
                           src={imagePreview}
                           alt="Preview"
                           className="image-preview"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                          }}
                         />
                         <button
                           type="button"
@@ -553,7 +556,13 @@ const Dashboard = () => {
                   <div className="admin-item-card" key={item._id}>
                     {item.imageUrl && (
                       <div className="card-image">
-                        <img src={`${backendUrl}${item.imageUrl}`} alt={item.title} />
+                        <img 
+                          src={`${backendUrl}${item.imageUrl}`} 
+                          alt={item.title} 
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                          }}
+                        />
                       </div>
                     )}
                     <div className="card-content">

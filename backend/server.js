@@ -3,6 +3,11 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Routes
 import authRoutes from "./routes/authRoutes.js";
@@ -19,6 +24,9 @@ const app = express();
 // ================= MIDDLEWARE =================
 app.use(cors());
 app.use(express.json());
+
+// Serve static files from the uploads directory
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // ================= TEST ROUTE =================
 app.get("/", (req, res) => {

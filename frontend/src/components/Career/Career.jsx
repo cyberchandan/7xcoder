@@ -3,6 +3,8 @@ import HomePage9 from "../Home/HomePage9";
 import arrow from "../../assets/business-software-solutions/icon/arrow1.png";
 import "./career.css";
 
+const getBackendUrl = () => import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+
 const Career = () => {
   const [posts, setPosts] = useState([]);
   const [selected, setSelected] = useState(null);
@@ -40,9 +42,12 @@ const Career = () => {
                 {job.imageUrl && (
                   <div className="career-img-container-sb1-career">
                     <img
-                      src={`${import.meta.env.VITE_BACKEND_URL}${job.imageUrl}`}
+                      src={`${getBackendUrl()}${job.imageUrl}`}
                       alt={job.title}
                       className="fit-image"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                      }}
                     />
                   </div>
                 )}
@@ -126,7 +131,15 @@ const Career = () => {
                 <p>{selected.requirements}</p>
               </>
             )}
-            {selected.imageUrl && <img src={`${import.meta.env.VITE_BACKEND_URL}${selected.imageUrl}`} alt="" />}
+            {selected.imageUrl && (
+              <img 
+                src={`${getBackendUrl()}${selected.imageUrl}`} 
+                alt="" 
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
+              />
+            )}
             <button onClick={() => setSelected(null)}>Close</button>
           </div>
         </div>

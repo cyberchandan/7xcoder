@@ -4,6 +4,8 @@ import blogImg1 from "../../assets/blog/images/blog_1.png";
 import arrow from "../../assets/business-software-solutions/icon/arrow1.png";
 import { useState } from "react";
 
+const getBackendUrl = () => import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+
 const Service3_1 = ({ blogs = [] }) => {
   const [selectedBlog, setSelectedBlog] = useState(null);
   // split data into latest two
@@ -36,9 +38,13 @@ const Service3_1 = ({ blogs = [] }) => {
                 <div className="blog-card-sb1-blog" key={blog._id || blog.id}>
                   <div className="blog-img-container-sb1-blog">
                     <img
-                      src={blog.imageUrl ? `${import.meta.env.VITE_BACKEND_URL}${blog.imageUrl}` : (blog.image || blogImg1)}
+                      src={blog.imageUrl ? `${getBackendUrl()}${blog.imageUrl}` : (blog.image || blogImg1)}
                       alt={blog.title}
                       className="fit-image"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = blogImg1;
+                      }}
                     />
                   </div>
                   <p className="blog-meta-sb1-blog">
@@ -100,9 +106,13 @@ const Service3_1 = ({ blogs = [] }) => {
             </button>
             {selectedBlog.imageUrl && (
               <img
-                src={`${import.meta.env.VITE_BACKEND_URL}${selectedBlog.imageUrl}`}
+                src={`${getBackendUrl()}${selectedBlog.imageUrl}`}
                 alt={selectedBlog.title}
                 className="blog-modal-image"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = blogImg1;
+                }}
               />
             )}
             <h2 className="blog-modal-title">{selectedBlog.title}</h2>
