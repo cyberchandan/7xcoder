@@ -5,6 +5,7 @@ import path from 'path';
 import fs from 'fs';
 import Blog from '../models/Blog.js';
 import Career from '../models/Career.js';
+import Subscriber from '../models/Subscriber.js';
 
 const router = express.Router();
 
@@ -38,16 +39,16 @@ const upload = multer({ storage });
 
 // ---------------- BLOGS ---------------- 
 
-router.get('/blogs', async (req, res) => {
+router.get('/blogs', async (req, res, next) => {
   try {
     const blogs = await Blog.find().sort({ date: -1 });
     res.json(blogs);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    next(error);
   }
 });
 
-router.post('/blogs', auth, upload.single('image'), async (req, res) => {
+router.post('/blogs', auth, upload.single('image'), async (req, res, next) => {
   try {
     const { title, description, date, comments } = req.body;
     const imageUrl = req.file ? `/uploads/${req.file.filename}` : '';
@@ -56,11 +57,12 @@ router.post('/blogs', auth, upload.single('image'), async (req, res) => {
     await blog.save();
     res.status(201).json(blog);
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    res.status(400);
+    next(error);
   }
 });
 
-router.put('/blogs/:id', auth, upload.single('image'), async (req, res) => {
+router.put('/blogs/:id', auth, upload.single('image'), async (req, res, next) => {
   try {
     const updateData = { ...req.body };
     if (req.file) {
@@ -69,31 +71,32 @@ router.put('/blogs/:id', auth, upload.single('image'), async (req, res) => {
     const blog = await Blog.findByIdAndUpdate(req.params.id, updateData, { new: true });
     res.json(blog);
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    res.status(400);
+    next(error);
   }
 });
 
-router.delete('/blogs/:id', auth, async (req, res) => {
+router.delete('/blogs/:id', auth, async (req, res, next) => {
   try {
     await Blog.findByIdAndDelete(req.params.id);
     res.json({ message: 'Deleted' });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    next(error);
   }
 });
 
 // ---------------- CAREERS ---------------- 
 
-router.get('/careers', async (req, res) => {
+router.get('/careers', async (req, res, next) => {
   try {
     const careers = await Career.find().sort({ date: -1 });
     res.json(careers);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    next(error);
   }
 });
 
-router.post('/careers', auth, upload.single('image'), async (req, res) => {
+router.post('/careers', auth, upload.single('image'), async (req, res, next) => {
   try {
     const { title, description, date, location, requirements } = req.body;
     const imageUrl = req.file ? `/uploads/${req.file.filename}` : '';
@@ -102,11 +105,12 @@ router.post('/careers', auth, upload.single('image'), async (req, res) => {
     await career.save();
     res.status(201).json(career);
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    res.status(400);
+    next(error);
   }
 });
 
-router.put('/careers/:id', auth, upload.single('image'), async (req, res) => {
+router.put('/careers/:id', auth, upload.single('image'), async (req, res, next) => {
   try {
     const updateData = { ...req.body };
     if (req.file) {
@@ -115,16 +119,50 @@ router.put('/careers/:id', auth, upload.single('image'), async (req, res) => {
     const career = await Career.findByIdAndUpdate(req.params.id, updateData, { new: true });
     res.json(career);
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    res.status(400);
+    next(error);
   }
 });
 
-router.delete('/careers/:id', auth, async (req, res) => {
+router.delete('/careers/:id', auth, async (req, res, next) => {
   try {
     await Career.findByIdAndDelete(req.params.id);
     res.json({ message: 'Deleted' });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    next(error);
+  }
+});
+
+// ---------------- SUBSCRIBERS ---------------- 
+
+router.post('/subscribe', async (req, res, next) => {
+  try {
+    const { email } = req.body;
+    if (!email) {
+      res.status(400);
+      throw new Error('Please provide an email');
+    }
+
+    const existingSubscriber = await Subscriber.findOne({ email });
+    if (existingSubscriber) {
+      return res.status(200).json({ success: true, message: 'Already subscribed' });
+    }
+
+    const newSubscriber = new Subscriber({ email });
+    await newSubscriber.save();
+    
+    res.status(201).json({ success: true, message: 'Subscribed successfully' });
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.get('/subscribers', auth, async (req, res, next) => {
+  try {
+    const subscribers = await Subscriber.find().sort({ date: -1 });
+    res.json(subscribers);
+  } catch (error) {
+    next(error);
   }
 });
 

@@ -6,7 +6,7 @@ import Admin from '../models/Admin.js';
 const router = express.Router();
 
 // Admin Login
-router.post('/login', async (req, res) => {
+router.post('/login', async (req, res, next) => {
   try {
     const { email, password } = req.body;
     
@@ -36,8 +36,7 @@ router.post('/login', async (req, res) => {
     res.json({ success: true, token });
 
   } catch (error) {
-    console.error('Login Error:', error);
-    res.status(500).json({ success: false, message: 'Server error' });
+    next(error);
   }
 });
 
